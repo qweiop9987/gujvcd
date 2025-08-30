@@ -656,6 +656,13 @@ Tabs.BeiyiqiTab:Button({
 })
 
 Tabs.BeiyiqiTab:Button({
+    Title = "墨水游戏hook防封",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/05e1141b8fdeec9dd262dde9f071d6ffdaccd5b1/inkgamereducer.lua"))()
+    end
+})
+
+Tabs.BeiyiqiTab:Button({
     Title = "静默瞄准1.2最新",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fcsdsss/games/refs/heads/main/Silent%20aim/1.2"))()
@@ -824,6 +831,12 @@ Tabs.BeiyiqiTab:Button({
     end
 })
 
+Tabs.BeiyiqiTab:Button({
+    Title = "一路向西",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fcsdsss/westboundscp/refs/heads/main/obfuscated.lua%20(1).txt"))()
+    end
+})
 
 Window:OnClose(function()
     print("UI closed.")
